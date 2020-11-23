@@ -1,0 +1,92 @@
+#include "platform.h"
+#include <xil_io.h>
+#include <stdio.h>
+
+#define DEBUG_MODE 0
+
+#define ADDR_GPIO	0x40000000
+#define ADDR_LOG	0x44A00000
+#define ADDR_X		0x10
+#define ADDR_Y		0x18
+
+#define APP_START	0x1
+#define APP_DONE	0x2
+
+void _log2(float x, float *y){
+	#pragma HLS INTERFACE s_axilite port=y
+	#pragma HLS INTERFACE s_axilite port=x
+	#pragma HLS INTERFACE s_axilite port=return
+
+	const float A =  -.6296735;
+	const float B =   1.466967;
+	float signif, fexp;
+	int exp;
+	union {
+		float f;
+		unsigned int i; } ux1, ux2;
+	int isgreater;
+	ux1.f = x;
+	exp = (ux1.i & 0x7F800000) >> 23;
+	isgreater = ux1.i & 0x00400000;
+	if (isgreater) {
+		ux2.i = (ux1.i & 0x007FFFFF) | 0x3f000000;
+		signif = ux2.f;
+		fexp = exp - 126;
+		signif = signif - 1.0;
+	} else {
+		ux2.i = (ux1.i & 0x007FFFFF) | 0x3f800000;
+		signif = ux2.f;
+		fexp = exp - 127;
+		signif = signif - 1.0;
+	}
+	*y = fexp + A*signif*signif + B*signif;
+}
+
+int main() {
+
+	init_platform();
+
+	s16 n;
+	s16 matrix_a[100];
+	s16 matrix_b[100];
+	s16 matrix_c[100];
+
+	while (1) {
+
+	Xil_Out16(ADDR_GPIO_BASE, N_LETTER);
+	get_matrix_size(&n);
+	if (n < 5 || n > 10) {
+		if (!DEBUG_)
+			xil_printf("Matrix size should be in this bounds: [5;10]\n");
+		continue;
+	}
+
+	xil_printf("n = %d\n", n);
+
+	Xil_Out16(ADDR_GPIO_BASE, A_LETTER);
+	if (!DEBUG_)
+		xil_printf("Enter matrix A\n");
+	get_matrix(n, matrix_a);
+
+	xil_printf("--MATRIX A--\n");
+	print_matrix(n, matrix_a);
+
+	Xil_Out16(ADDR_GPIO_BASE, B_LETTER);
+	if (!DEBUG_)
+		xil_printf("Enter matrix B\n");
+	get_matrix(n, matrix_b);
+
+	xil_printf("--MATRIX B--\n");
+	print_matrix(n, matrix_b);
+
+	get_result_matrix(n, matrix_a, matrix_b, matrix_c);
+	Xil_Out16(ADDR_GPIO_BASE, C_LETTER);
+	xil_printf("--MATRIX C--\n");
+	print_matrix(n, matrix_c);
+
+	}
+
+    cleanup_platform();
+
+  return 0;
+}
