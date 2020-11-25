@@ -42,7 +42,7 @@ set SCTraceOption all
 set TargetInfo xc7a100t:-csg324:-1
 set SourceFiles {sc {} c ../log2.c}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile C:/Users/mavity/VivadoProjects/soc3/part2/accelerator/solution1/solution1.directive
+set DirectiveFile C:/Users/mavity/VivadoProjects/soc3/accelerator/solution1/solution1.directive
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

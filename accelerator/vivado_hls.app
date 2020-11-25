@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="log2" name="accelerator">
+<project xmlns="com.autoesl.autopilot.project" name="accelerator" top="log2">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

@@ -77,14 +77,14 @@
 						<id>6</id>
 						<name>x_read</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>1</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -126,14 +126,14 @@
 						<id>10</id>
 						<name>tmp_1</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -175,14 +175,14 @@
 						<id>11</id>
 						<name>tmp_2</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -224,14 +224,14 @@
 						<id>12</id>
 						<name>b</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -273,14 +273,14 @@
 						<id>13</id>
 						<name>tmp_3</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -322,14 +322,14 @@
 						<id>14</id>
 						<name>_ln15</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -370,14 +370,14 @@
 						<id>16</id>
 						<name>empty</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -532,14 +532,14 @@
 						<id>20</id>
 						<name>icmp_ln15</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -581,14 +581,14 @@
 						<id>22</id>
 						<name>i</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -630,14 +630,14 @@
 						<id>23</id>
 						<name>_ln15</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -680,14 +680,14 @@
 						<id>25</id>
 						<name>zext_ln15</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -728,14 +728,14 @@
 						<id>28</id>
 						<name>tmp_6</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -776,14 +776,14 @@
 						<id>29</id>
 						<name>a</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>17</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -825,14 +825,14 @@
 						<id>30</id>
 						<name>tmp_8</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -874,14 +874,14 @@
 						<id>31</id>
 						<name>k</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>19</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -923,14 +923,14 @@
 						<id>32</id>
 						<name>pow_b_1</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -972,14 +972,14 @@
 						<id>34</id>
 						<name>_ln15</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1020,14 +1020,14 @@
 						<id>36</id>
 						<name>tmp_4</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>23</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1069,14 +1069,14 @@
 						<id>37</id>
 						<name>tmp_5</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1118,14 +1118,14 @@
 						<id>38</id>
 						<name>y_write_ln26</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>26</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1168,14 +1168,14 @@
 						<id>39</id>
 						<name>_ln27</name>
 						<fileName>accelerator/log2.c</fileName>
-						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3\part2</fileDirectory>
+						<fileDirectory>C:\Users\mavity\VivadoProjects\soc3</fileDirectory>
 						<lineNumber>27</lineNumber>
 						<contextFuncName>log2</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\mavity\VivadoProjects\soc3\part2</first>
+								<first>C:\Users\mavity\VivadoProjects\soc3</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

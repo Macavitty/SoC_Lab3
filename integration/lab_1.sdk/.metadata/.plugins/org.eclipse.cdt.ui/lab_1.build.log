@@ -1,0 +1,27 @@
+19:20:44 **** Auto Build of configuration Debug for project lab_1 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:6:7: warning: conflicting types for built-in function 'abs' [-Wbuiltin-declaration-mismatch]
+ float abs(float a){
+       ^~~
+../src/helloworld.c:12:6: warning: conflicting types for built-in function 'log2' [-Wbuiltin-declaration-mismatch]
+ void log2(float x, float *y){
+      ^~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: lab_1.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../lab_1_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab_1.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab_1.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab_1.elf  |tee "lab_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8752	    268	   3108	  12128	   2f60	lab_1.elf
+'Finished building: lab_1.elf.size'
+' '
+
+19:20:50 Build Finished (took 5s.899ms)
+

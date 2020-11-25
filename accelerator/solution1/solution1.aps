@@ -2,12 +2,6 @@
     <checksum>
         <value string="false"/>
     </checksum>
-    <downStreamTool>
-        <DownStreamTool name="vivado"/>
-    </downStreamTool>
-    <clockList>
-        <clock name="default" period="10"/>
-    </clockList>
     <config>
         <schedule model="log2"/>
         <config_export display_name="log2_ip" format="ip_catalog" rtl="verilog"/>
@@ -70,5 +64,11 @@
         <library name="DefaultPlatform" value="xilinx/artix7/artix7"/>
         <library value="xilinx/artix7/artix7_fpv6" name="DefaultPlatform"/>
     </libraryList>
+    <downStreamTool>
+        <DownStreamTool name="vivado"/>
+    </downStreamTool>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
 </solution>
 

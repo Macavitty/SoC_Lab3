@@ -2401,3 +2401,59 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7a100t-csg324-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a100t-csg324-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'accelerator/log2.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'log2' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'log2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] Unable to enforce a carried constraint (II = 4)
+   between 'fadd' operation ('tmp_8', accelerator/log2.c:18) and 'fadd' operation ('tmp_8', accelerator/log2.c:18).
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 5, Depth = 27.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.127 seconds; current allocated memory: 99.763 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.356 seconds; current allocated memory: 100.180 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'log2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'log2/x' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'log2/y' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'log2' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'y' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'log2_fadd_32ns_32ns_32_5_full_dsp_1' to 'log2_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'log2_fmul_32ns_32ns_32_4_max_dsp_1' to 'log2_fmul_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'log2_fdiv_32ns_32ns_32_16_1' to 'log2_fdiv_32ns_32dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'log2_sitofp_32ns_32_6_1' to 'log2_sitofp_32ns_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'log2_fadd_32ns_32bkb': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'log2_fdiv_32ns_32dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'log2_fmul_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'log2_sitofp_32ns_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'log2'.
+INFO: [HLS 200-111]  Elapsed time: 0.393 seconds; current allocated memory: 101.068 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 184.051 ; gain = 94.109
+INFO: [VHDL 208-304] Generating VHDL RTL for log2.
+INFO: [VLOG 209-307] Generating Verilog RTL for log2.
+INFO: [HLS 200-112] Total elapsed time: 23.278 seconds; peak allocated memory: 101.068 MB.

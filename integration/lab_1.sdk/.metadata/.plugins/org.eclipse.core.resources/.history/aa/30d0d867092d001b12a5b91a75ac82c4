@@ -1,0 +1,78 @@
+#include "platform.h"
+#include <xil_io.h>
+#include <stdio.h>
+
+#define DEBUG_MODE 1
+
+#define ADDR_GPIO	0x40000000
+//#define ADDR_LOG	0x44A00000
+//#define ADDR_X		0x10
+//#define ADDR_Y		0x18
+//
+//#define APP_START	0x1
+//#define APP_DONE	0x2
+
+void _log2(float x, float *y){
+	const float A =  -.6296735;
+	const float B =   1.466967;
+	float signif, fexp;
+	int exp;
+	union {
+		float f;
+		unsigned int i; } ux1, ux2;
+	int isgreater;
+	ux1.f = x;
+	exp = (ux1.i & 0x7F800000) >> 23;
+	isgreater = ux1.i & 0x00400000;
+	if (isgreater) {
+		ux2.i = (ux1.i & 0x007FFFFF) | 0x3f000000;
+		signif = ux2.f;
+		fexp = exp - 126;
+		signif = signif - 1.0;
+	} else {
+		ux2.i = (ux1.i & 0x007FFFFF) | 0x3f800000;
+		signif = ux2.f;
+		fexp = exp - 127;
+		signif = signif - 1.0;
+	}
+	*y = fexp + A*signif*signif + B*signif;
+}
+
+int main() {
+
+	init_platform();
+
+//	int stat = 0;
+//	int counter = 1000;
+	float x = 9;
+	float y;
+
+//	Xil_Out32(ADDR_LOG + ADDR_X, x);
+//	Xil_Out32(ADDR_LOG, APP_START);
+//
+//	while ((stat & APP_DONE) == 0 /*&& counter > 0*/) {
+//		stat = Xil_In32(ADDR_LOG);
+//		counter--;
+//	}
+
+//	Xil_Out32(ADDR_GPIO, 0x3);
+
+//	if ((stat & APP_DONE) == 0){
+//		// xil_printf("Alarm! Stuck in endless loop.");
+//		Xil_Out32(ADDR_GPIO, 0x4);
+//		return 0;
+//	} else {
+//		Xil_Out32(ADDR_GPIO, 0x5);
+//		y = Xil_In32(ADDR_LOG + ADDR_Y);
+//		Xil_Out32(ADDR_GPIO, y);
+//
+//		xil_printf("log2(%f) = %f\n", x, y);
+//	}
+
+	_log2(x, &y);
+	Xil_Out32(ADDR_GPIO, y);
+
+	cleanup_platform();
+
+  return 0;
+}
