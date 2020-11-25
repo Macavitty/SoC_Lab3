@@ -1,0 +1,6 @@
+log2_fadd_32ns_32bkb
+log2_fmul_32ns_32cud
+log2_fdiv_32ns_32dEe
+log2_sitofp_32ns_eOg
+log2_AXILiteS_s_axi
+log2
