@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # 
-# Start of session at: Tue Nov 24 01:01:07 2020
-# Process ID: 11108
-# Current directory: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/webtalk
+# Start of session at: Sun Dec  6 16:07:27 2020
+# Process ID: 7048
+# Current directory: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sdk/webtalk
 # Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
-# Log file: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/webtalk/webtalk.log
-# Journal file: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/webtalk\webtalk.jou
+# Log file: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sdk/webtalk\webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

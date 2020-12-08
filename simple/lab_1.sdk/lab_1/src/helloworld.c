@@ -3,15 +3,8 @@
 
 #define ADDR_GPIO	0x40000000
 
-float abs(float a){
-	if (a < 0)
-		a *= -1;
-	return a;
-}
-
 void log2(float x, float *y){
 	const float LN2 = 0.69314718056;
-	float a = 0;
 	float b = (x - 1) / (x + 1);
 	float pow_b = b;
 	int k = 1;
@@ -19,8 +12,7 @@ void log2(float x, float *y){
 	*y = 0;
 	// ln(x)
 	for (int i = 0; i < loop_count; i++){
-		a = pow_b / k;
-		*y += a;
+		*y += pow_b / k;
 		k += 2;
 		pow_b *= b * b;
 	}

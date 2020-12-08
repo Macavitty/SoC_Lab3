@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Nov 25 08:38:26 2020
-# Process ID: 10196
-# Current directory: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sim/sim_1/behav/xsim/xsim.dir/all_dev_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Sun Dec  6 15:59:29 2020
+# Process ID: 13268
+# Current directory: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sim/sim_1/behav/xsim/xsim.dir/all_dev_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sim/sim_1/behav/xsim/xsim.dir/all_dev_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/mavity/VivadoProjects/soc3/simple/lab_1.sim/sim_1/behav/xsim/xsim.dir/all_dev_tb_behav/webtalk/xsim_webtalk.tcl -notrace
