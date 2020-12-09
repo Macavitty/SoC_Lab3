@@ -22,6 +22,15 @@ vlib activehdl/axi_crossbar_v2_1_20
 vlib activehdl/lib_pkg_v1_0_2
 vlib activehdl/lib_srl_fifo_v1_0_2
 vlib activehdl/axi_uartlite_v2_0_23
+vlib activehdl/xbip_utils_v3_0_10
+vlib activehdl/axi_utils_v2_0_6
+vlib activehdl/xbip_pipe_v3_0_6
+vlib activehdl/xbip_dsp48_wrapper_v3_0_4
+vlib activehdl/xbip_dsp48_addsub_v3_0_6
+vlib activehdl/xbip_dsp48_multadd_v3_0_6
+vlib activehdl/xbip_bram18k_v3_0_6
+vlib activehdl/mult_gen_v12_0_15
+vlib activehdl/floating_point_v7_1_8
 
 vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xpm activehdl/xpm
@@ -44,6 +53,15 @@ vmap axi_crossbar_v2_1_20 activehdl/axi_crossbar_v2_1_20
 vmap lib_pkg_v1_0_2 activehdl/lib_pkg_v1_0_2
 vmap lib_srl_fifo_v1_0_2 activehdl/lib_srl_fifo_v1_0_2
 vmap axi_uartlite_v2_0_23 activehdl/axi_uartlite_v2_0_23
+vmap xbip_utils_v3_0_10 activehdl/xbip_utils_v3_0_10
+vmap axi_utils_v2_0_6 activehdl/axi_utils_v2_0_6
+vmap xbip_pipe_v3_0_6 activehdl/xbip_pipe_v3_0_6
+vmap xbip_dsp48_wrapper_v3_0_4 activehdl/xbip_dsp48_wrapper_v3_0_4
+vmap xbip_dsp48_addsub_v3_0_6 activehdl/xbip_dsp48_addsub_v3_0_6
+vmap xbip_dsp48_multadd_v3_0_6 activehdl/xbip_dsp48_multadd_v3_0_6
+vmap xbip_bram18k_v3_0_6 activehdl/xbip_bram18k_v3_0_6
+vmap mult_gen_v12_0_15 activehdl/mult_gen_v12_0_15
+vmap floating_point_v7_1_8 activehdl/floating_point_v7_1_8
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "C:/Xilinx/Vivado/2019.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -150,6 +168,48 @@ vcom -work xil_defaultlib -93 \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/sim/design_1.v" \
+
+vcom -work xbip_utils_v3_0_10 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/1123/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vcom -work axi_utils_v2_0_6 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/1971/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vcom -work xbip_pipe_v3_0_6 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_wrapper_v3_0_4 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/cdbf/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_addsub_v3_0_6 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/910d/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_dsp48_multadd_v3_0_6 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/b0ac/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_bram18k_v3_0_6 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/d367/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vcom -work mult_gen_v12_0_15 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/d4d2/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vcom -work floating_point_v7_1_8 -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/83a3/hdl/floating_point_v7_1_vh_rfs.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/c923" "+incdir+../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2_AXILiteS_s_axi.v" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2_fadd_32ns_32bkb.v" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2_fdiv_32ns_32dEe.v" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2_fmul_32ns_32cud.v" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2_sitofp_32ns_eOg.v" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/verilog/log2.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/ip/log2_ap_fadd_3_full_dsp_32.vhd" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/ip/log2_ap_fdiv_14_no_dsp_32.vhd" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/ip/log2_ap_fmul_2_max_dsp_32.vhd" \
+"../../../../lab_1.srcs/sources_1/bd/design_1/ipshared/919b/hdl/ip/log2_ap_sitofp_4_no_dsp_32.vhd" \
+"../../../bd/design_1/ip/design_1_log2_0_0/sim/design_1_log2_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

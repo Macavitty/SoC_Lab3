@@ -1571,3 +1571,16 @@ con
 18:34:23 INFO  : Successfully done setting SDK workspace  
 18:34:23 INFO  : Processing command line option -hwspec C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/design_1_wrapper.hdf.
 18:34:23 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_3.
+01:07:29 INFO  : Registering command handlers for SDK TCF services
+01:07:31 INFO  : Launching XSCT server: xsct.bat -interactive E:\University\4course\SystemOnTheChip\Labs\3\SoC_Lab3\integration\lab_1.sdk\temp_xsdb_launch_script.tcl
+01:07:38 INFO  : XSCT server has started successfully.
+01:07:45 INFO  : Processing command line option -hwspec E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.sdk/design_1_wrapper.hdf.
+01:07:46 INFO  : Successfully done setting XSCT server connection channel  
+01:07:53 INFO  : Successfully done setting SDK workspace  
+09:57:16 INFO  : Registering command handlers for SDK TCF services
+09:57:17 INFO  : Launching XSCT server: xsct.bat -interactive E:\University\4course\SystemOnTheChip\Labs\3\SoC_Lab3\integration\lab_1.sdk\temp_xsdb_launch_script.tcl
+09:57:22 INFO  : XSCT server has started successfully.
+09:57:23 INFO  : Processing command line option -hwspec E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.sdk/design_1_wrapper.hdf.
+09:57:23 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_4.
+09:57:23 INFO  : Successfully done setting XSCT server connection channel  
+09:57:23 INFO  : Successfully done setting SDK workspace  

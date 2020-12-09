@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Nov 24 19:22:14 2020
-| Host         : DESKTOP-KGH6VBG running 64-bit major release  (build 9200)
+| Date         : Tue Dec  8 10:32:37 2020
+| Host         : DESKTOP-7NFTMLA running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7a100tcsg324-1
@@ -161,6 +161,7 @@ Table of Contents
 | design_1_rst_clk_wiz_1_100M_0 |    1 |
 | design_1_microblaze_0_0       |    1 |
 | design_1_mdm_1_0              |    1 |
+| design_1_log2_0_0             |    1 |
 | design_1_lmb_bram_0           |    1 |
 | design_1_ilmb_v10_0           |    1 |
 | design_1_ilmb_bram_if_cntlr_0 |    1 |

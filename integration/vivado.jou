@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  8 11:03:38 2020
+# Process ID: 1652
+# Current directory: E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10960 E:\University\4course\SystemOnTheChip\Labs\3\SoC_Lab3\integration\lab_1.xpr
+# Log file: E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/vivado.log
+# Journal file: E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {1 197 64} [get_bd_cells mdm_1]
+set_property location {1 202 214} [get_bd_cells rst_clk_wiz_1_100M]
+set_property location {1 182 536} [get_bd_cells clk_wiz_1]
+set_property location {1 190 686} [get_bd_cells clk_wiz_1]
+set_property location {1 219 463} [get_bd_cells axi_interconnect_0]
+set_property location {1 207 497} [get_bd_cells axi_interconnect_0]
+set_property location {1 204 519} [get_bd_cells axi_interconnect_0]
+set_property location {2 734 257} [get_bd_cells axi_gpio_0]
+set_property location {2 687 381} [get_bd_cells axi_gpio_0]
+set_property location {2 687 501} [get_bd_cells axi_uartlite_0]
+set_property location {2 679 521} [get_bd_cells axi_uartlite_0]
+set_property location {2 716 658} [get_bd_cells log2_0]
+set_property location {2 679 261} [get_bd_cells microblaze_0_local_memory]
+regenerate_bd_layout -routing
+save_bd_design

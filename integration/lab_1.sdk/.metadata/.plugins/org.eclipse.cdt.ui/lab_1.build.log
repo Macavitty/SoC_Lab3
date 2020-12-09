@@ -1,4 +1,4 @@
-19:20:44 **** Auto Build of configuration Debug for project lab_1 ****
+01:08:17 **** Auto Build of configuration Debug for project lab_1 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -10,6 +10,11 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../lab_1_b
  void log2(float x, float *y){
       ^~~~
 'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../lab_1_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: lab_1.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -23,5 +28,5 @@ mb-size lab_1.elf  |tee "lab_1.elf.size"
 'Finished building: lab_1.elf.size'
 ' '
 
-19:20:50 Build Finished (took 5s.899ms)
+01:08:21 Build Finished (took 4s.434ms)
 

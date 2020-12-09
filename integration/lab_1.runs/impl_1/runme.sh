@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.runs/impl_1'
+HD_PWD='E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

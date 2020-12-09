@@ -1,0 +1,46 @@
+#include "platform.h"
+#include <xil_io.h>
+#include <stdio.h>
+
+#define ADDR_GPIO	0x40000000
+#define ADDR_LOG	0x44A00000
+#define ADDR_X		0x44A00000+0x10
+#define ADDR_Y		0x44A00000+0x18
+
+#define APP_START	0x1
+#define APP_DONE	0x2
+
+int main() {
+
+	init_platform();
+
+	int stat = 0;
+	int counter = 1000;
+
+	union {
+		float f;
+		int32_t i;
+	} y;
+
+	Xil_Out32(ADDR_X, 13);
+	Xil_Out32(ADDR_GPIO, 0xffffffff);
+	Xil_Out32(ADDR_LOG, APP_START);
+
+	while ((stat & APP_DONE) == 0 && counter > 0) {
+		stat = Xil_In32(ADDR_LOG);
+		counter--;
+	}
+
+	if ((stat & APP_DONE) == 0){
+		printf("Alarm! Stuck in endless loop.");
+		return 0;
+	} else {
+		y.f = Xil_In32(ADDR_Y);
+		Xil_Out32(ADDR_GPIO, y.i);
+	}
+
+
+	cleanup_platform();
+
+  return 0;
+}

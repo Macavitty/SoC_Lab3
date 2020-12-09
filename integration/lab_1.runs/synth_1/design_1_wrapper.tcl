@@ -17,52 +17,54 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.xpr [current_project]
+set_property webtalk.parent_dir E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.cache/wt [current_project]
+set_property parent.project_path E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.cache/ip [current_project]
+set_property ip_repo_paths e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/accelerator/solution1/impl/ip [current_project]
+update_ip_catalog
+set_property ip_output_repo e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/lab_1/Debug/lab_1.elf
-set_property SCOPED_TO_REF design_1 [get_files -all C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/lab_1/Debug/lab_1.elf]
-set_property SCOPED_TO_CELLS microblaze_0 [get_files -all C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.sdk/lab_1/Debug/lab_1.elf]
-read_verilog -library xil_defaultlib C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
+add_files E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.sdk/lab_1/Debug/lab_1.elf
+set_property SCOPED_TO_REF design_1 [get_files -all E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.sdk/lab_1/Debug/lab_1.elf]
+set_property SCOPED_TO_CELLS microblaze_0 [get_files -all E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.sdk/lab_1/Debug/lab_1.elf]
+read_verilog -library xil_defaultlib E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_log2_0_0/constraints/log2_ooc.xdc]
+set_property used_in_implementation false [get_files -all E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -72,8 +74,8 @@ set_property used_in_implementation false [get_files -all c:/Users/mavity/Vivado
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/constrs_1/new/constr.xdc
-set_property used_in_implementation false [get_files C:/Users/mavity/VivadoProjects/soc3/part1/lab_1.srcs/constrs_1/new/constr.xdc]
+read_xdc E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/constrs_1/new/constr.xdc
+set_property used_in_implementation false [get_files E:/University/4course/SystemOnTheChip/Labs/3/SoC_Lab3/integration/lab_1.srcs/constrs_1/new/constr.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
